@@ -1,0 +1,190 @@
+<!-- Dashboard.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item active">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="welcome">
+                    <h2>Selamat datang di YouthFinance</h2>
+                    <p>Kelola keuangan Karang Taruna dengan mudah dan transparan</p>
+                </div>
+                <div class="user-menu">
+                    <div class="notification">
+                        <i>🔔</i>
+                        <div class="notification-badge">3</div>
+                    </div>
+                    <div class="user-avatar">
+                        <i>👤</i> Admin
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Balance Card -->
+                <div class="card balance-card">
+                    <div class="card-header">
+                        <div class="card-title">Saldo Utama</div>
+                    </div>
+                    <div class="balance-amount">Rp 8.450.000</div>
+                    <div class="balance-stats">
+                        <div class="stat-item">
+                            <span class="income">↗</span>
+                            <span>Pemasukan 75%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="expense">↘</span>
+                            <span>Pengeluaran 25%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Bills -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Tagihan Mendatang</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-name">Listrik</div>
+                        </div>
+                        <div class="transaction-amount negative">Rp 150.000</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-name">Internet</div>
+                        </div>
+                        <div class="transaction-amount negative">Rp 150.000</div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Transaksi Terbaru</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-name">Makan Siang</div>
+                            <div class="transaction-date">23/11/2025</div>
+                        </div>
+                        <div class="transaction-amount negative">-Rp 25.000</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-name">Iuran</div>
+                            <div class="transaction-date">23/11/2025</div>
+                        </div>
+                        <div class="transaction-amount positive">+Rp 50.000</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-name">Dana Sosial</div>
+                            <div class="transaction-date">23/11/2025</div>
+                        </div>
+                        <div class="transaction-amount negative">-Rp 100.000</div>
+                    </div>
+                </div>
+
+                <!-- Monthly Chart -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Grafik Bulanan</div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <h3>GRAFIK KEUANGAN BULANAN</h3>
+                        <p>YouthFinance</p>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Aksi Cepat</div>
+                    </div>
+                    <div class="quick-actions">
+                        <!-- Tambah Transaksi -->
+                        <a href="transactions.html?action=add" class="action-btn">
+                            <div class="action-icon">💰</div>
+                            <div class="action-text">
+                                <div class="action-title">Tambah Transaksi</div>
+                                <div class="action-description">Catat pemasukan/pengeluaran baru</div>
+                            </div>
+                            <div class="action-arrow">→</div>
+                        </a>
+
+                        <!-- Kelola Anggota -->
+                        <a href="members.html" class="action-btn">
+                            <div class="action-icon">👥</div>
+                            <div class="action-text">
+                                <div class="action-title">Kelola Anggota</div>
+                                <div class="action-description">Edit data anggota dan iuran</div>
+                            </div>
+                            <div class="action-arrow">→</div>
+                        </a>
+
+                        <!-- Buat Kegiatan -->
+                        <a href="activities.html?action=create" class="action-btn">
+                            <div class="action-icon">📅</div>
+                            <div class="action-text">
+                                <div class="action-title">Buat Kegiatan</div>
+                                <div class="action-description">Rencanakan kegiatan baru</div>
+                            </div>
+                            <div class="action-arrow">→</div>
+                        </a>
+
+                        <!-- Lihat Laporan -->
+                        <a href="reports.html" class="action-btn">
+                            <div class="action-icon">📈</div>
+                            <div class="action-text">
+                                <div class="action-title">Lihat Laporan</div>
+                                <div class="action-description">Analisis laporan keuangan</div>
+                            </div>
+                            <div class="action-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

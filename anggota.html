@@ -1,0 +1,202 @@
+<!-- Members.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Anggota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item active">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">Manajemen Anggota</div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">
+                        <i>📤</i> Export Data
+                    </button>
+                    <button class="btn btn-primary">
+                        <i>👤</i> Tambah Anggota
+                    </button>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">45</div>
+                    <div class="stat-label">Total Anggota</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">40</div>
+                    <div class="stat-label">Aktif</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Tunggak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Partisipasi</div>
+                </div>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Cari nama anggota...">
+                <select class="filter-select">
+                    <option>Semua Status</option>
+                    <option>Aktif</option>
+                    <option>Nonaktif</option>
+                    <option>Tunggak</option>
+                </select>
+                <button class="btn btn-secondary">Filter</button>
+            </div>
+
+            <!-- Members Grid -->
+            <div class="members-grid">
+                <!-- Member Card 1 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">AW</div>
+                        <div class="member-info">
+                            <div class="member-name">Andi Wijaya</div>
+                            <div class="member-contact">081234567890</div>
+                        </div>
+                        <span class="status-badge status-active">Aktif</span>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Bergabung</div>
+                            <div>15 Jan 2023</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Iuran</div>
+                            <div class="transaction-amount positive">✅ Lunas</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Total Kegiatan</div>
+                            <div>12 kegiatan</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Terakhir Bayar</div>
+                            <div>23 Nov 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="member-actions">
+                        <button class="btn btn-secondary" style="flex: 1;">Edit</button>
+                        <button class="btn btn-primary" style="flex: 1;">Chat</button>
+                    </div>
+                </div>
+
+                <!-- Member Card 2 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">BS</div>
+                        <div class="member-info">
+                            <div class="member-name">Budi Santoso</div>
+                            <div class="member-contact">081298765432</div>
+                        </div>
+                        <span class="status-badge status-pending">Tunggak</span>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Bergabung</div>
+                            <div>20 Feb 2023</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Iuran</div>
+                            <div class="transaction-amount negative">❌ 2 Bulan</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Total Kegiatan</div>
+                            <div>8 kegiatan</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Terakhir Bayar</div>
+                            <div>Sep 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="member-actions">
+                        <button class="btn btn-secondary" style="flex: 1;">Edit</button>
+                        <button class="btn btn-primary" style="flex: 1;">Ingatkan</button>
+                    </div>
+                </div>
+
+                <!-- Member Card 3 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="member-avatar">SM</div>
+                        <div class="member-info">
+                            <div class="member-name">Siti Mulyani</div>
+                            <div class="member-contact">081377788899</div>
+                        </div>
+                        <span class="status-badge status-inactive">Nonaktif</span>
+                    </div>
+
+                    <div class="member-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Bergabung</div>
+                            <div>10 Mar 2023</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Iuran</div>
+                            <div>-</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Total Kegiatan</div>
+                            <div>15 kegiatan</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Status</div>
+                            <div>Alumni</div>
+                        </div>
+                    </div>
+
+                    <div class="member-actions">
+                        <button class="btn btn-secondary" style="flex: 1;">Edit</button>
+                        <button class="btn btn-primary" style="flex: 1;">Aktifkan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

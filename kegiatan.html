@@ -1,0 +1,150 @@
+<!-- Activities.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Kegiatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item active">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">Manajemen Kegiatan</div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">
+                        <i>📅</i> Kalender
+                    </button>
+                    <button class="btn btn-primary">
+                        <i>➕</i> Buat Kegiatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="activities-tabs">
+                <button class="tab active">Semua Kegiatan</button>
+                <button class="tab">Akan Datang</button>
+                <button class="tab">Berlangsung</button>
+                <button class="tab">Selesai</button>
+            </div>
+
+            <!-- Activities List -->
+            <div class="activity-card">
+                <div class="activity-header">
+                    <div style="flex: 1;">
+                        <div class="activity-title">Bakti Sosial Desa</div>
+                        <div class="activity-date">📅 1-15 Desember 2025</div>
+                    </div>
+                    <span class="activity-badge badge-upcoming">Akan Datang</span>
+                </div>
+
+                <div class="activity-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span>Anggaran: Rp 2.000.000</span>
+                        <span>Terpakai: Rp 0 (0%)</span>
+                    </div>
+                </div>
+
+                <div class="activity-stats">
+                    <div class="stat">
+                        <div class="stat-value">25</div>
+                        <div class="stat-label">Peserta</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Hari Lagi</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">75%</div>
+                        <div class="stat-label">Target Dana</div>
+                    </div>
+                </div>
+
+                <div class="activity-actions">
+                    <button class="btn btn-secondary">Edit</button>
+                    <button class="btn btn-secondary">Lihat Detail</button>
+                    <button class="btn btn-primary">Kelola Peserta</button>
+                </div>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-header">
+                    <div style="flex: 1;">
+                        <div class="activity-title">Lomba 17 Agustusan</div>
+                        <div class="activity-date">📅 10-17 Agustus 2025</div>
+                    </div>
+                    <span class="activity-badge badge-completed">Selesai</span>
+                </div>
+
+                <div class="activity-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span>Anggaran: Rp 5.000.000</span>
+                        <span>Terpakai: Rp 4.200.000 (84%)</span>
+                    </div>
+                </div>
+
+                <div class="activity-stats">
+                    <div class="stat">
+                        <div class="stat-value">150</div>
+                        <div class="stat-label">Peserta</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">+800k</div>
+                        <div class="stat-label">Profit</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">4.5</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                </div>
+
+                <div class="activity-actions">
+                    <button class="btn btn-secondary">Laporan</button>
+                    <button class="btn btn-secondary">Evaluasi</button>
+                    <button class="btn btn-primary">Lihat Dokumentasi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

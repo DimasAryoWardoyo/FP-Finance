@@ -1,0 +1,213 @@
+<!-- Transactions.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation (sama seperti dashboard) -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item active">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">Manajemen Transaksi</div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">
+                        <i>📤</i> Export
+                    </button>
+                    <button class="btn btn-primary">
+                        <i>➕</i> Transaksi Baru
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label">Tanggal Mulai</label>
+                    <input type="date" class="filter-input">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Tanggal Akhir</label>
+                    <input type="date" class="filter-input">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Kategori</label>
+                    <select class="filter-select">
+                        <option>Semua Kategori</option>
+                        <option>Iuran</option>
+                        <option>Kegiatan</option>
+                        <option>Operasional</option>
+                        <option>Dana Sosial</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Jenis</label>
+                    <select class="filter-select">
+                        <option>Semua Jenis</option>
+                        <option>Pemasukan</option>
+                        <option>Pengeluaran</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">&nbsp;</label>
+                    <button class="btn btn-secondary">Terapkan Filter</button>
+                </div>
+            </div>
+
+            <!-- Transactions Table -->
+            <div class="card">
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Kategori</th>
+                            <th>Deskripsi</th>
+                            <th>Jumlah</th>
+                            <th>Bukti</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>23/11/2025</td>
+                            <td>
+                                <span class="transaction-type type-income">Iuran</span>
+                            </td>
+                            <td>Iuran bulanan - Andi Wijaya</td>
+                            <td class="transaction-amount positive">+Rp 50.000</td>
+                            <td>
+                                <a href="#" class="transaction-proof">📎 Lihat</a>
+                            </td>
+                            <td>
+                                <div class="action-cell">
+                                    <button class="icon-btn" title="Edit">✏️</button>
+                                    <button class="icon-btn" title="Hapus">🗑️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23/11/2025</td>
+                            <td>
+                                <span class="transaction-type type-expense">Makanan</span>
+                            </td>
+                            <td>Makan siang rapat</td>
+                            <td class="transaction-amount negative">-Rp 25.000</td>
+                            <td>
+                                <a href="#" class="transaction-proof">📎 Lihat</a>
+                            </td>
+                            <td>
+                                <div class="action-cell">
+                                    <button class="icon-btn" title="Edit">✏️</button>
+                                    <button class="icon-btn" title="Hapus">🗑️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23/11/2025</td>
+                            <td>
+                                <span class="transaction-type type-expense">Sosial</span>
+                            </td>
+                            <td>Dana sosial bantuan warga</td>
+                            <td class="transaction-amount negative">-Rp 100.000</td>
+                            <td>
+                                <a href="#" class="transaction-proof">📎 Lihat</a>
+                            </td>
+                            <td>
+                                <div class="action-cell">
+                                    <button class="icon-btn" title="Edit">✏️</button>
+                                    <button class="icon-btn" title="Hapus">🗑️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22/11/2025</td>
+                            <td>
+                                <span class="transaction-type type-income">Donasi</span>
+                            </td>
+                            <td>Donasi dari Toko Sejahtera</td>
+                            <td class="transaction-amount positive">+Rp 500.000</td>
+                            <td>
+                                <a href="#" class="transaction-proof">📎 Lihat</a>
+                            </td>
+                            <td>
+                                <div class="action-cell">
+                                    <button class="icon-btn" title="Edit">✏️</button>
+                                    <button class="icon-btn" title="Hapus">🗑️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20/11/2025</td>
+                            <td>
+                                <span class="transaction-type type-expense">Kegiatan</span>
+                            </td>
+                            <td>Biaya persiapan bakti sosial</td>
+                            <td class="transaction-amount negative">-Rp 350.000</td>
+                            <td>
+                                <a href="#" class="transaction-proof">📎 Lihat</a>
+                            </td>
+                            <td>
+                                <div class="action-cell">
+                                    <button class="icon-btn" title="Edit">✏️</button>
+                                    <button class="icon-btn" title="Hapus">🗑️</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
+                <div style="color: var(--secondary); font-size: 14px;">
+                    Menampilkan 1-5 dari 45 transaksi
+                </div>
+                <div style="display: flex; gap: 8px;">
+                    <button class="btn btn-secondary">Sebelumnya</button>
+                    <button class="btn btn-secondary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary">Selanjutnya</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

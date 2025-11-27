@@ -1,0 +1,229 @@
+<!-- Reports.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Laporan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item active">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">Laporan Keuangan</div>
+                <div class="action-buttons">
+                    <div class="export-options">
+                        <button class="btn btn-secondary">
+                            <i>📄</i> Export PDF
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i>📊</i> Export Excel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Period Selector -->
+            <div class="report-period">
+                <div class="period-selector">
+                    <label>Periode:</label>
+                    <select class="filter-select">
+                        <option>November 2025</option>
+                        <option>Oktober 2025</option>
+                        <option>September 2025</option>
+                    </select>
+                    <button class="btn btn-secondary">Terapkan</button>
+                </div>
+                <div style="flex: 1;"></div>
+                <div style="color: var(--secondary); font-size: 14px;">
+                    Data diperbarui: 23 Nov 2025 14:30
+                </div>
+            </div>
+
+            <!-- Report Cards -->
+            <div class="report-cards">
+                <div class="report-card">
+                    <div class="report-value">Rp 3.500.000</div>
+                    <div class="report-label">Total Pemasukan</div>
+                </div>
+                <div class="report-card">
+                    <div class="report-value">Rp 2.800.000</div>
+                    <div class="report-label">Total Pengeluaran</div>
+                </div>
+                <div class="report-card">
+                    <div class="report-value">Rp 700.000</div>
+                    <div class="report-label">Saldo Akhir</div>
+                </div>
+                <div class="report-card">
+                    <div class="report-value">+20%</div>
+                    <div class="report-label">Growth</div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="chart-container">
+                <div class="card-header">
+                    <div class="card-title">Grafik Cash Flow Bulanan</div>
+                </div>
+                <div class="chart-placeholder">
+                    <h3>GRAFIK CASH FLOW BULANAN</h3>
+                    <p>Pemasukan vs Pengeluaran November 2025</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="card-header">
+                    <div class="card-title">Grafik Kategori Pengeluaran</div>
+                </div>
+                <div class="chart-placeholder">
+                    <h3>PIE CHART KATEGORI PENGELUARAN</h3>
+                    <p>Breakdown pengeluaran per kategori</p>
+                </div>
+            </div>
+
+            <!-- Financial Summary -->
+            <div class="table-summary">
+                <div class="card-header">
+                    <div class="card-title">Ringkasan Keuangan November 2025</div>
+                </div>
+
+                <div class="summary-row">
+                    <span>Saldo Awal Bulan</span>
+                    <span>Rp 7.750.000</span>
+                </div>
+
+                <div class="summary-row">
+                    <span><strong>Pemasukan</strong></span>
+                    <span></span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Iuran Anggota</span>
+                    <span class="transaction-amount positive">+Rp 2.000.000</span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Donasi</span>
+                    <span class="transaction-amount positive">+Rp 1.000.000</span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Hasil Kegiatan</span>
+                    <span class="transaction-amount positive">+Rp 500.000</span>
+                </div>
+
+                <div class="summary-row">
+                    <span><strong>Pengeluaran</strong></span>
+                    <span></span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Kegiatan</span>
+                    <span class="transaction-amount negative">-Rp 1.200.000</span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Operasional</span>
+                    <span class="transaction-amount negative">-Rp 800.000</span>
+                </div>
+
+                <div class="summary-row" style="padding-left: 20px;">
+                    <span>Dana Sosial</span>
+                    <span class="transaction-amount negative">-Rp 800.000</span>
+                </div>
+
+                <div class="summary-row">
+                    <span><strong>Saldo Akhir Bulan</strong></span>
+                    <span><strong>Rp 8.450.000</strong></span>
+                </div>
+            </div>
+
+            <!-- Category Breakdown -->
+            <div class="category-breakdown">
+                <div>
+                    <h4 style="margin-bottom: 16px;">Pemasukan per Kategori</h4>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #10b981;"></div>
+                            <span>Iuran Anggota</span>
+                        </div>
+                        <span>Rp 2.000.000 (57%)</span>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #3b82f6;"></div>
+                            <span>Donasi</span>
+                        </div>
+                        <span>Rp 1.000.000 (29%)</span>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #8b5cf6;"></div>
+                            <span>Hasil Kegiatan</span>
+                        </div>
+                        <span>Rp 500.000 (14%)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 16px;">Pengeluaran per Kategori</h4>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #ef4444;"></div>
+                            <span>Kegiatan</span>
+                        </div>
+                        <span>Rp 1.200.000 (43%)</span>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #f59e0b;"></div>
+                            <span>Operasional</span>
+                        </div>
+                        <span>Rp 800.000 (29%)</span>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-info">
+                            <div class="category-color" style="background: #ec4899;"></div>
+                            <span>Dana Sosial</span>
+                        </div>
+                        <span>Rp 800.000 (29%)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

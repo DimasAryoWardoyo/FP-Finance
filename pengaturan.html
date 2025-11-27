@@ -1,0 +1,392 @@
+<!-- Settings.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouthFinance - Pengaturan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>YouthFinance</h1>
+                <div class="subtitle">Karang Taruna</div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-item">
+                    <i>📊</i> Dashboard
+                </a>
+                <a href="transaksi.html" class="nav-item">
+                    <i>💰</i> Transaksi
+                </a>
+                <a href="anggota.html" class="nav-item">
+                    <i>👥</i> Anggota
+                </a>
+                <a href="kegiatan.html" class="nav-item">
+                    <i>📅</i> Kegiatan
+                </a>
+                <a href="laporan.html" class="nav-item">
+                    <i>📈</i> Laporan
+                </a>
+                <a href="pengaturan.html" class="nav-item active">
+                    <i>⚙️</i> Pengaturan
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">Pengaturan Sistem</div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">
+                        <i>↻</i> Reset Pengaturan
+                    </button>
+                    <button class="btn btn-primary">
+                        <i>💾</i> Simpan Perubahan
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-container">
+                <!-- Settings Sidebar -->
+                <div class="settings-sidebar">
+                    <nav class="settings-nav">
+                        <a href="#organisasi" class="settings-nav-item active">
+                            🏢 Organisasi
+                        </a>
+                        <a href="#keuangan" class="settings-nav-item">
+                            💰 Keuangan
+                        </a>
+                        <a href="#notifikasi" class="settings-nav-item">
+                            🔔 Notifikasi
+                        </a>
+                        <a href="#keanggotaan" class="settings-nav-item">
+                            👥 Keanggotaan
+                        </a>
+                        <a href="#keamanan" class="settings-nav-item">
+                            🔐 Keamanan
+                        </a>
+                        <a href="#backup" class="settings-nav-item">
+                            💾 Backup & Restore
+                        </a>
+                        <a href="#integrasi" class="settings-nav-item">
+                            🔗 Integrasi
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Settings Content -->
+                <div class="settings-content">
+                    <!-- Organisasi Section -->
+                    <div class="settings-section" id="organisasi">
+                        <div class="section-title">Informasi Organisasi</div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Nama Organisasi</label>
+                                <input type="text" class="form-input" value="Karang Taruna Mekar Jaya"
+                                    placeholder="Masukkan nama organisasi">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Kode Organisasi</label>
+                                <input type="text" class="form-input" value="KT-MJ-001"
+                                    placeholder="Kode unik organisasi" readonly>
+                                <div class="form-help">Kode otomatis, tidak dapat diubah</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Alamat Organisasi</label>
+                            <textarea class="form-textarea"
+                                placeholder="Masukkan alamat lengkap organisasi">Jl. Merdeka No. 123, Kelurahan Mekar Jaya, Kecamatan Sukajaya</textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email Organisasi</label>
+                                <input type="email" class="form-input" value="karangtaruna.mj@gmail.com"
+                                    placeholder="email@organisasi.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Telepon</label>
+                                <input type="tel" class="form-input" value="081234567890"
+                                    placeholder="Nomor telepon organisasi">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Logo Organisasi</label>
+                            <div style="display: flex; gap: 16px; align-items: center;">
+                                <div
+                                    style="width: 80px; height: 80px; background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                                    🏢
+                                </div>
+                                <div style="flex: 1;">
+                                    <input type="file" class="form-input" accept="image/*">
+                                    <div class="form-help">Format: JPG, PNG, SVG. Maksimal 2MB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keuangan Section -->
+                    <div class="settings-section" id="keuangan">
+                        <div class="section-title">Pengaturan Keuangan</div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Mata Uang Default</label>
+                                <select class="form-select">
+                                    <option selected>IDR - Rupiah Indonesia</option>
+                                    <option>USD - US Dollar</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Format Tanggal</label>
+                                <select class="form-select">
+                                    <option selected>DD/MM/YYYY</option>
+                                    <option>MM/DD/YYYY</option>
+                                    <option>YYYY-MM-DD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Kategori Pemasukan Default</label>
+                            <input type="text" class="form-input" value="Iuran, Donasi, Hasil Kegiatan, Lainnya"
+                                placeholder="Pisahkan dengan koma">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Kategori Pengeluaran Default</label>
+                            <input type="text" class="form-input"
+                                value="Kegiatan, Operasional, Dana Sosial, Administrasi, Lainnya"
+                                placeholder="Pisahkan dengan koma">
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <div class="toggle-title">Auto-calculate Saldo</div>
+                                <div class="toggle-description">Otomatis menghitung saldo saat menambah transaksi</div>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Notifikasi Section -->
+                    <div class="settings-section" id="notifikasi">
+                        <div class="section-title">Pengaturan Notifikasi</div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <div class="toggle-title">Notifikasi Email</div>
+                                <div class="toggle-description">Kirim notifikasi melalui email</div>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <div class="toggle-title">Notifikasi WhatsApp</div>
+                                <div class="toggle-description">Kirim notifikasi melalui WhatsApp</div>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <div class="toggle-info">
+                                <div class="toggle-title">Pengingat Iuran Otomatis</div>
+                                <div class="toggle-description">Kirim pengingat iuran otomatis ke anggota</div>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Jadwal Pengingat Iuran</label>
+                            <select class="form-select" multiple style="height: 120px;">
+                                <option selected>H-7 (7 hari sebelum jatuh tempo)</option>
+                                <option selected>H-3 (3 hari sebelum jatuh tempo)</option>
+                                <option selected>H-1 (1 hari sebelum jatuh tempo)</option>
+                                <option>Hari jatuh tempo</option>
+                                <option>H+1 (1 hari setelah jatuh tempo)</option>
+                                <option>H+3 (3 hari setelah jatuh tempo)</option>
+                            </select>
+                            <div class="form-help">Tahan Ctrl untuk memilih multiple opsi</div>
+                        </div>
+                    </div>
+
+                    <!-- Membership Plans -->
+                    <div class="settings-section" id="keanggotaan">
+                        <div class="section-title">Paket Keanggotaan</div>
+
+                        <div class="membership-grid">
+                            <!-- Free Plan -->
+                            <div class="membership-card">
+                                <div class="membership-header">
+                                    <div class="membership-name">Gratis</div>
+                                    <div class="membership-price">Rp 0</div>
+                                    <div class="membership-period">/bulan</div>
+                                </div>
+                                <ul class="membership-features">
+                                    <li><span class="feature-check">✅</span> Maksimal 50 anggota</li>
+                                    <li><span class="feature-check">✅</span> 5 GB storage</li>
+                                    <li><span class="feature-check">✅</span> Laporan dasar</li>
+                                    <li><span class="feature-cross">❌</span> Notifikasi WhatsApp</li>
+                                    <li><span class="feature-cross">❌</span> Export PDF</li>
+                                    <li><span class="feature-cross">❌</span> Support prioritas</li>
+                                </ul>
+                                <button class="btn btn-secondary" style="width: 100%;" disabled>Sedang Aktif</button>
+                            </div>
+
+                            <!-- Premium Plan -->
+                            <div class="membership-card recommended">
+                                <div class="membership-header">
+                                    <div class="membership-name">Premium</div>
+                                    <div class="membership-price">Rp 25.000</div>
+                                    <div class="membership-period">/bulan</div>
+                                </div>
+                                <ul class="membership-features">
+                                    <li><span class="feature-check">✅</span> Maksimal 200 anggota</li>
+                                    <li><span class="feature-check">✅</span> 20 GB storage</li>
+                                    <li><span class="feature-check">✅</span> Laporan lengkap</li>
+                                    <li><span class="feature-check">✅</span> Notifikasi WhatsApp</li>
+                                    <li><span class="feature-check">✅</span> Export PDF & Excel</li>
+                                    <li><span class="feature-check">✅</span> Support prioritas</li>
+                                </ul>
+                                <button class="btn btn-primary" style="width: 100%;">Upgrade Sekarang</button>
+                            </div>
+
+                            <!-- Enterprise Plan -->
+                            <div class="membership-card">
+                                <div class="membership-header">
+                                    <div class="membership-name">Enterprise</div>
+                                    <div class="membership-price">Rp 100.000</div>
+                                    <div class="membership-period">/bulan</div>
+                                </div>
+                                <ul class="membership-features">
+                                    <li><span class="feature-check">✅</span> Anggota unlimited</li>
+                                    <li><span class="feature-check">✅</span> Storage unlimited</li>
+                                    <li><span class="feature-check">✅</span> Laporan custom</li>
+                                    <li><span class="feature-check">✅</span> Multi-user access</li>
+                                    <li><span class="feature-check">✅</span> API access</li>
+                                    <li><span class="feature-check">✅</span> Dedicated support</li>
+                                </ul>
+                                <button class="btn btn-secondary" style="width: 100%;">Hubungi Sales</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backup Section -->
+                    <div class="settings-section" id="backup">
+                        <div class="section-title">Backup & Restore</div>
+
+                        <div class="backup-item">
+                            <div class="backup-info">
+                                <div class="backup-date">Backup - 23 Nov 2025 00:00</div>
+                                <div class="backup-size">45.2 MB - 1,245 transaksi, 45 anggota</div>
+                            </div>
+                            <button class="btn btn-secondary">Download</button>
+                        </div>
+
+                        <div class="backup-item">
+                            <div class="backup-info">
+                                <div class="backup-date">Backup - 22 Nov 2025 00:00</div>
+                                <div class="backup-size">44.8 MB - 1,240 transaksi, 45 anggota</div>
+                            </div>
+                            <button class="btn btn-secondary">Download</button>
+                        </div>
+
+                        <div class="backup-item">
+                            <div class="backup-info">
+                                <div class="backup-date">Backup - 21 Nov 2025 00:00</div>
+                                <div class="backup-size">44.5 MB - 1,235 transaksi, 45 anggota</div>
+                            </div>
+                            <button class="btn btn-secondary">Download</button>
+                        </div>
+
+                        <div style="display: flex; gap: 12px; margin-top: 20px;">
+                            <button class="btn btn-primary">
+                                <i>💾</i> Buat Backup Sekarang
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i>📤</i> Restore dari File
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Danger Zone -->
+                    <div class="danger-zone">
+                        <div class="danger-title">Zona Berbahaya</div>
+                        <div class="danger-description">
+                            Tindakan di bawah ini tidak dapat dibatalkan. Harap berhati-hati saat menggunakannya.
+                        </div>
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn-danger">
+                                <i>🗑️</i> Hapus Semua Data
+                            </button>
+                            <button class="btn-danger">
+                                <i>🚫</i> Nonaktifkan Akun
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple tab navigation for settings
+        document.querySelectorAll('.settings-nav-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all items
+                document.querySelectorAll('.settings-nav-item').forEach(nav => {
+                    nav.classList.remove('active');
+                });
+
+                // Add active class to clicked item
+                this.classList.add('active');
+
+                // Show corresponding section (in real implementation)
+                const target = this.getAttribute('href');
+                console.log('Navigating to:', target);
+            });
+        });
+
+        // Copy API key functionality
+        document.querySelector('.copy-btn')?.addEventListener('click', function () {
+            const apiKey = this.parentElement.querySelector('span').textContent;
+            navigator.clipboard.writeText(apiKey).then(() => {
+                const originalText = this.textContent;
+                this.textContent = '✅ Disalin!';
+                setTimeout(() => {
+                    this.textContent = originalText;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
